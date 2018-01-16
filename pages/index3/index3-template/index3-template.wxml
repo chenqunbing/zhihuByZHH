@@ -1,0 +1,10 @@
+<template name="index3-template">
+  <view class='index3-container'>
+  <image src='{{avatar}}'></image>
+  <view class='people'>
+    <text>{{name}}</text>
+    <text>{{content}}</text>
+  </view>
+  <text class='time'>{{time}}</text>
+</view>
+</template>

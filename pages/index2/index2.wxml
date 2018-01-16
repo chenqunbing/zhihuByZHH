@@ -1,0 +1,29 @@
+<import src='index2-template/index2-template.wxml' />
+<view class='swiper-tab'>
+  <view class="swiper-tab-list {{currentTab==0?'on':''}}" bindtap='changeNav' data-current='0'>通知</view>
+  <view class="swiper-tab-list {{currentTab==1?'on':''}}" bindtap='changeNav' data-current='1'>赞与感谢</view>
+  <view class="swiper-tab-list {{currentTab==2?'on':''}}" bindtap='changeNav' data-current='2'>关注</view>
+</view>
+
+<swiper duration="200" class='swiper-box' current='{{currentTab}}' bindchange='bindChange' style='height:{{winHeight-31}}px'>
+
+  <swiper-item>
+    <view class='tongzhi-contanier'>
+      <view class='head'>
+        <input placeholder='0条未读' placeholder-class='placeholder'></input>
+        <image src='/images/allread.png'></image>
+      </view>
+
+      <template is="message-template" />
+      <template is="message-template" />
+      <template is="message-template" />
+      <template is="message-template" />
+      <template is="message-template" />
+      <template is="message-template" />
+      <template is="message-template" />
+      <template is="message-template" />
+    </view>
+  </swiper-item>
+  <swiper-item>赞与感谢页面</swiper-item>
+  <swiper-item>关注页面</swiper-item>
+</swiper>

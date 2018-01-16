@@ -1,0 +1,4 @@
+<import src="index3-template/index3-template.wxml" />
+<block wx:for="{{message}}">
+  <template is="index3-template" data="{{...item}}"/>
+</block>

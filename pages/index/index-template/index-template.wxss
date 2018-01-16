@@ -1,0 +1,56 @@
+/* 文章正文 */
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  padding: 15rpx;
+  margin-bottom: 25rpx;
+  background-color: #fff;
+}
+
+.page-head {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.page-head image:nth-of-type(1) {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  vertical-align: middle; 
+}
+
+.page-head image:nth-of-type(2) {
+ width: 100rpx;
+ height: 80rpx;
+ position: absolute;
+ right: 40rpx;
+ top: 20rpx;
+}
+
+.page-head text {
+  font-size: 34rpx;
+   padding-left: 20rpx; 
+  line-height: 120rpx;
+  vertical-align: middle; 
+}
+
+.title {
+  font-weight: bold;
+  font-size: 36rpx;
+  margin-bottom: 15rpx;
+}
+
+.content {
+  font-size: 28rpx;
+  margin-bottom: 15rpx;
+}
+.comment {
+  display: flex;
+  flex-direction: row;
+}
+.comment text{
+  font-size: 28rpx;
+  color: #666;
+}

@@ -1,0 +1,12 @@
+<template name='message-template'>
+  <view class='message-conatiner'>
+    <view class='message'>
+      <image src='/images/icon1.jpeg'></image>
+      <view class='authour'>
+        <text>Rebecca</text>
+        <text>回答了问题</text>
+      </view>
+      <text class='question'>关于电子书真的会替代纸质书籍吗？</text>
+    </view>
+  </view>
+</template>

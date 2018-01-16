@@ -1,0 +1,22 @@
+<template name="article-template">
+  <view class='page-container'>
+    <view class='page-head'>
+      <image src='{{avatar}}'></image>
+      <text>{{name}}</text>
+      <text>赞了</text>
+      <text>回答</text>
+      <text>{{answer_number}}</text>
+      <image src='/images/more.png'></image>
+    </view>
+    <text class='title'>{{article_title}}</text>
+    <text class='content'>{{article_content}}</text>
+    <view class='comment'>
+      <text>{{agree_number}}</text>
+      <text>赞同</text>
+      <text>{{comment_number}}</text>
+      <text>评论</text>
+      <text>关注问题</text>
+    </view>
+  </view>
+
+</template>

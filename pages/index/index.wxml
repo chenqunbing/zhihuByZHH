@@ -1,0 +1,15 @@
+<import src='index-template/index-template.wxml' />
+<view class='index-container'>
+  <view class='search-container'>
+    <icon type='search' size="20"></icon>
+    <input type='text' placeholder="收索话题、问题或人" placeholder-class="placeholder"></input>
+    <image catchtap='refresh' src='/images/lighting.png' ></image>
+  </view>
+
+  <block wx:for="{{article_data}}" wx:for-item="article">
+    <view catchtap='toArticleDetail' data-articleId="{{article.articleId}}">
+      <template is="article-template" data="{{...article}}" />
+    </view>
+  </block>
+
+</view>
